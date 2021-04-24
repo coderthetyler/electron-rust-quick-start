@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' app: 'unsafe-eval' 'unsafe-inline'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' app: 'unsafe-eval'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Hello Rust!</title>
   </head>
@@ -11,11 +11,6 @@
     <h1>Hello Rust!</h1>
     <p>This is a minimal template to build an Electron app that uses a WASM module compiled from Rust.</p>
     
-    <script type="module">
-      import init, {greet} from "./rust-lib/pkg/rust_lib.js";
-      init().then(() => {
-        greet("Electron");
-      });
-    </script>
+    <script type="module" src="./module.js"></script>
   </body>
 </html>
