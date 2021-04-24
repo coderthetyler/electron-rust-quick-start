@@ -1,0 +1,31 @@
+{
+  "name": "electron-rust-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron + WebAssembly (WASM) + Rust project template (Apr 2021)",
+  "main": "main.js",
+  "scripts": {
+    "wasm-build": "wasm-pack build --target web rust-lib",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerdaddio/electron-rust-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "Rust",
+    "WASM",
+    "template",
+    "quick-start"
+  ],
+  "author": "Tyler Daddio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerdaddio/electron-rust-quick-start/issues"
+  },
+  "homepage": "https://github.com/tylerdaddio/electron-rust-quick-start#readme",
+  "devDependencies": {
+    "electron": "^12.0.5"
+  }
+}
