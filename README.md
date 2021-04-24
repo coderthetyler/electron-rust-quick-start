@@ -3,7 +3,7 @@ A minimal Electron + Rust example.
 
 ## 🌈 About
 
-This project intended to serve as an understandable & working example of calling into Rust from Electron.
+This repo is intended to offer an understandable example of calling into Rust from Electron.
 
 If you plan to use this as a starting point for your project, definitely update the `package.json` and `Cargo.toml` with your information.
 
